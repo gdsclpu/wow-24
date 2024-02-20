@@ -4,64 +4,157 @@
 <head>
   <title>GDSC WOW | Shortlink</title>
   <style>
-    * {
-            box-sizing: border-box;
-    }
-    body {
-            margin: 0;
-            padding: 0;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            background-color: #f3d2c1;
-        }
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+  /*===== Colors =====*/
+  --first-color: #1A73E8;
+  --input-color: #80868B;
+  --border-color: #DADCE0;
 
-        .form {
-            padding: 25px;
-            background-color: #fef6e4;
-            margin: 10%;
-            max-width: 400px;
-        }
+  --body-font: "Roboto", sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .75rem;
+}
 
-        .formContainer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+/*===== BASE =====*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
 
-        input[type="text"] {
-            width: 100%;
-            margin: 10px 0px;
-            margin-bottom: 20px;
-            padding: 10px 10px;
-            border: 2px solid #f582ae;
-        }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
 
-        button {
-            background-color: #f582ae;
-            width: 30%;
-            color: rgb(11, 11, 11);
-            padding: 15px;
-            margin: 10px 0px;
-            margin-bottom: 20px;
-            border: 2px solid #f582ae;
-            font-weight: bold;
-        }
+h1 {
+  margin: 0;
+}
 
-        button:hover {
-            border-radius: 6px;
-        }
+/*===== FORM =====*/
+.l-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.banner {
+  position: absolute;
+bottom: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.form {
+  width: 360px;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+}
+
+.form__title {
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.form__div {
+  position: relative;
+  height: 52px;
+  margin-bottom: 1.5rem;
+}
+.form__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: var(--normal-font-size);
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 1rem;
+  background: none;
+  z-index: 1;
+}
+
+.form__label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0 0.25rem;
+  background-color: #fff;
+  color: var(--input-color);
+  font-size: var(--normal-font-size);
+  transition: 0.3s;
+}
+
+.form__button {
+  display: block;
+  margin-left: auto;
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  background-color: var(--first-color);
+  color: #fff;
+  font-size: var(--normal-font-size);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form__button:hover {
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+/*Input focus move up label*/
+.form__input:focus + .form__label {
+  top: -0.5rem;
+  left: 0.8rem;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  z-index: 10;
+}
+
+/*Input focus sticky top label*/
+.form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+  top: -0.5rem;
+  left: 0.8rem;
+  z-index: 10;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+}
+
+/*Input focus*/
+.form__input:focus {
+  border: 2px solid var(--first-color);
+}
   </style>
 </head>
 
 <body>
   <main>
-    <div class="formContainer">
+
+    <div class="l-form">
+      <img src="../static/banner.png" class="banner">
         <div class="form">
-            <h1>Linker</h1>
-            <label for="longlink">Link</label>
-            <input type="text" id="longlink" placeholder="https://instagram.com/gdscwow" />
-            <label for="shortlink">Shortlink</label>
-            <input type="text" id="shortlink" placeholder="insta" />
-            <button id="submit">Shorten</button>
+            <h1 class="form__title">Linker</h1>
+
+            <div class="form__div">
+                <input type="text" class="form__input" id="longlink" placeholder="">
+                <label for="longlink" class="form__label">Link</label>
+            </div>
+
+            <div class="form__div">
+                <input type="text" id="shortlink" class="form__input" placeholder="">
+                <label for="shortlink" class="form__label">Short-link</label>
+            </div>
+            <input type="submit" id="submit" class="form__button" value="Shorten">
+
             <span id="message"></span>
         </div>
     </div>
@@ -98,3 +191,4 @@
   </script>
 </body>
 </html>
+
