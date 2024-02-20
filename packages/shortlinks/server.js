@@ -16,8 +16,12 @@ app.use('/static', express.static('static'));
 app.use('/create', createRouter);
 
 app.get('/', (req, res) => {
-    res.send('Made with ❤️ by Ba3a.')
+    res.render('create');
 })
+
+app.get('*', (req, res) => {
+    res.status(404).send('Are you lost baby gurl?');
+});
 
 app.listen(PORT, () => {
     console.log(`server started on http://localhost:${PORT} ...`);

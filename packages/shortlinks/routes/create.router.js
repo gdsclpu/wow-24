@@ -9,11 +9,6 @@ const dubdomain = process.env.DUB_CO_DOMAIN;
 
 const router = express.Router();
 
-// routes here
-router.get('/', (req, res) => {
-    res.render('create');
-});
-
 router.post('/', async (req, res) => {
     const headers = {
         'Authorization': `Bearer ${dubkey}`,
