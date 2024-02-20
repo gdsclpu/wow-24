@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>GDSC WOW | Shortlink</title>
+  <style>
+    * {
+            box-sizing: border-box;
+    }
+    body {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: #f3d2c1;
+        }
+
+        .form {
+            padding: 25px;
+            background-color: #fef6e4;
+            margin: 10%;
+            max-width: 400px;
+        }
+
+        .formContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            margin: 10px 0px;
+            margin-bottom: 20px;
+            padding: 10px 10px;
+            border: 2px solid #f582ae;
+        }
+
+        button {
+            background-color: #f582ae;
+            width: 30%;
+            color: rgb(11, 11, 11);
+            padding: 15px;
+            margin: 10px 0px;
+            margin-bottom: 20px;
+            border: 2px solid #f582ae;
+            font-weight: bold;
+        }
+
+        button:hover {
+            border-radius: 6px;
+        }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="formContainer">
+        <div class="form">
+            <h1>Linker</h1>
+            <label for="longlink">Link</label>
+            <input type="text" id="longlink" placeholder="https://instagram.com/gdscwow" />
+            <label for="shortlink">Shortlink</label>
+            <input type="text" id="shortlink" placeholder="insta" />
+            <button id="submit">Shorten</button>
+            <span id="message"></span>
+        </div>
+    </div>
+  </main>
+  <script>
+    document.getElementById('submit').addEventListener('click', async () => {
+      const longlink = document.getElementById('longlink').value;
+      const shortlink = document.getElementById('shortlink').value;
+      try {
+        if (!longlink || !shortlink) {
+          throw new Error('Please fill in both fields');
+        }
+        const response = await fetch('/create', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ longlink, shortlink })
+        });
+        const data = await response.json();
+        console.log(data);
+        if (data.error) {
+          throw new Error(data.error);
+        }
+        document.getElementById('message').innerText = `Shortlink created and copied: ${data.body.shortLink}`;
+        document.getElementById('submit').innerText = 'Shortened!';
+        document.getElementById('submit').disabled = true;
+        navigator.clipboard.writeText(data.body.shortLink);
+      } catch (error) {
+        console.error(error);
+        document.getElementById('message').innerText = error.message;
+      }
+    });
+  </script>
+</body>
+</html>
