@@ -12,7 +12,7 @@
   --first-color: #1A73E8;
   --input-color: #80868B;
   --border-color: #DADCE0;
-  
+
   --body-font: "Roboto", sans-serif;
   --normal-font-size: 1rem;
   --small-font-size: .75rem;
@@ -40,6 +40,15 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.banner {
+  position: absolute;
+bottom: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .form {
@@ -131,6 +140,7 @@ h1 {
   <main>
 
     <div class="l-form">
+      <img src="../static/banner.png" class="banner">
         <div class="form">
             <h1 class="form__title">Linker</h1>
 
@@ -181,3 +191,4 @@ h1 {
   </script>
 </body>
 </html>
+
