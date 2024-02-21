@@ -2,193 +2,251 @@
 <html lang="en">
 
 <head>
-  <title>GDSC WOW | Shortlink</title>
-  <style>
-/*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-/*===== VARIABLES CSS =====*/
-:root {
-  /*===== Colors =====*/
-  --first-color: #1A73E8;
-  --input-color: #80868B;
-  --border-color: #DADCE0;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDSC WOW | Shortlink</title>
+    <style>
+        /*===== GOOGLE FONTS =====*/
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
-  --body-font: "Roboto", sans-serif;
-  --normal-font-size: 1rem;
-  --small-font-size: .75rem;
-}
+        /*===== VARIABLES CSS =====*/
+        :root {
+            /*===== Colors =====*/
+            --first-color: #D9D9D9;
+            --input-color: #909595;
+            --border-color: #373737;
+            --body-color: #1E1E1E;
+            --container-color: #1B1B1B;
 
-/*===== BASE =====*/
-*, ::before, ::after {
-  box-sizing: border-box;
-}
+            --body-font: "Roboto", sans-serif;
+            --normal-font-size: 1rem;
+            --small-font-size: .75rem;
+        }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
+        /*===== BASE =====*/
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
 
-h1 {
-  margin: 0;
-}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            background-color: var(--body-color);
 
-/*===== FORM =====*/
-.l-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+        }
 
-.banner {
-  position: absolute;
-bottom: 0;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  z-index: -1;
-}
+        h1 {
+            margin: 0;
+        }
 
-.form {
-  width: 360px;
-  padding: 3rem 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
-}
+        /*===== FORM =====*/
+        .l-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* z-index: 10; */
+        }
 
-.form__title {
-  font-weight: 500;
-  margin-bottom: 2.5rem;
-}
-.form__div {
-  position: relative;
-  height: 52px;
-  margin-bottom: 1.5rem;
-}
-.form__input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  font-size: var(--normal-font-size);
-  border: 2px solid var(--border-color);
-  border-radius: 0.5rem;
-  outline: none;
-  padding: 1rem;
-  background: none;
-  z-index: 1;
-}
+        .form {
+            width: 90%;
+            max-width: 360px;
+            padding: 3rem 2rem;
+            border-radius: 1rem;
+            border: 2px solid var(--border-color);
+            background-color: var(--container-color);
+            position: relative;
 
-.form__label {
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-  padding: 0 0.25rem;
-  background-color: #fff;
-  color: var(--input-color);
-  font-size: var(--normal-font-size);
-  transition: 0.3s;
-}
+        }
 
-.form__button {
-  display: block;
-  margin-left: auto;
-  padding: 0.75rem 2rem;
-  outline: none;
-  border: none;
-  background-color: var(--first-color);
-  color: #fff;
-  font-size: var(--normal-font-size);
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.form__button:hover {
-  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
-}
+        .form__title {
+            font-weight: 500;
+            text-align: center;
+            color: var(--input-color);
+        }
 
-/*Input focus move up label*/
-.form__input:focus + .form__label {
-  top: -0.5rem;
-  left: 0.8rem;
-  color: var(--first-color);
-  font-size: var(--small-font-size);
-  font-weight: 500;
-  z-index: 10;
-}
+        .form__description {
+            font-size: var(--small-font-size);
+            color: #858585;
+            margin-top: 0;
+            margin-bottom: 2.5rem;
+            text-align: center;
+        }
 
-/*Input focus sticky top label*/
-.form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
-  top: -0.5rem;
-  left: 0.8rem;
-  z-index: 10;
-  font-size: var(--small-font-size);
-  font-weight: 500;
-}
+        .form__div {
+            position: relative;
+            height: 52px;
+            margin-bottom: 1.5rem;
+        }
 
-/*Input focus*/
-.form__input:focus {
-  border: 2px solid var(--first-color);
-}
-  </style>
+        .form__input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: var(--normal-font-size);
+            border: 2px solid var(--border-color);
+            border-radius: 0.5rem;
+            outline: none;
+            padding: 1rem;
+            background: none;
+            color: var(--input-color);
+            z-index: 1;
+        }
+
+        .form__label {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            padding: 0 0.25rem;
+            background-color: var(--container-color);
+            color: var(--input-color);
+            font-size: var(--normal-font-size);
+            transition: 0.3s;
+        }
+
+        .form__button {
+            display: block;
+            margin-left: auto;
+            width: 100%;
+            padding: 0.75rem 2rem;
+            outline: none;
+            border: none;
+            background-color: var(--input-color);
+            color: var(--body-color);
+            font-size: var(--normal-font-size);
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .form__button:hover {
+            background-color: var(--first-color);
+        }
+
+        /*Input focus move up label*/
+        .form__input:focus+.form__label {
+            top: -0.5rem;
+            left: 0.8rem;
+            color: var(--first-color);
+            font-size: var(--small-font-size);
+            font-weight: 500;
+            z-index: 10;
+        }
+
+        /*Input focus sticky top label*/
+        .form__input:not(:placeholder-shown).form__input:not(:focus)+.form__label {
+            top: -0.5rem;
+            left: 0.8rem;
+            z-index: 10;
+            font-size: var(--small-font-size);
+            font-weight: 500;
+        }
+
+        /*Input focus*/
+        .form__input:focus {
+            border: 1px solid var(--first-color);
+            transition: 0.2s ease-in-out;
+        }
+
+        /* Toast styling */
+        .toast {
+            /* visibility: hidden; */
+            min-width: 220px;
+            border: 2px solid var(--border-color);
+            box-shadow: 0px 0px 20px 2px rgba(52, 52, 52, 0.321);
+            background: var(--container-color);
+            color: #918a8a;
+            text-align: center;
+            border-radius: 1rem;
+            padding: 16px;
+            z-index: -1;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 13px;
+            transition: 0.5s ease-in-out;
+
+        }
+
+        .toast.show {
+            /* visibility: visible; */
+            transition: 0.5s ease-in-out;
+            top: -90px;
+        }
+    </style>
 </head>
 
 <body>
-  <main>
+    <main>
 
-    <div class="l-form">
-      <img src="../static/banner.png" class="banner">
-        <div class="form">
-            <h1 class="form__title">Linker</h1>
+        <div class="l-form">
+            <div class="form">
+                <div id="toast" class="toast"></div>
 
-            <div class="form__div">
-                <input type="text" class="form__input" id="longlink" placeholder="">
-                <label for="longlink" class="form__label">Link</label>
+                <h1 class="form__title">LINKY</h1>
+                <p class="form__description">shorten your long links</p>
+
+                <div class="form__div">
+                    <input type="text" class="form__input" id="longlink" placeholder="">
+                    <label for="longlink" class="form__label">Link</label>
+                </div>
+
+                <div class="form__div">
+                    <input type="text" id="shortlink" class="form__input" placeholder="">
+                    <label for="shortlink" class="form__label">Short-link</label>
+                </div>
+                <input type="submit" id="submit" class="form__button" value="Shorten">
+
+                <span id="message"></span>
             </div>
-
-            <div class="form__div">
-                <input type="text" id="shortlink" class="form__input" placeholder="">
-                <label for="shortlink" class="form__label">Short-link</label>
-            </div>
-            <input type="submit" id="submit" class="form__button" value="Shorten">
-
-            <span id="message"></span>
         </div>
-    </div>
-  </main>
-  <script>
-    document.getElementById('submit').addEventListener('click', async () => {
-      const longlink = document.getElementById('longlink').value;
-      const shortlink = document.getElementById('shortlink').value;
-      try {
-        if (!longlink || !shortlink) {
-          throw new Error('Please fill in both fields');
-        }
-        const response = await fetch('/create', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ longlink, shortlink })
+    </main>
+    <script>
+        document.getElementById('submit').addEventListener('click', async () => {
+            const longlink = document.getElementById('longlink').value;
+            const shortlink = document.getElementById('shortlink').value;
+            try {
+                if (!longlink || !shortlink) {
+                    throw new Error('Please fill in both fields');
+                }
+                const response = await fetch('/create', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ longlink, shortlink })
+                });
+                const data = await response.json();
+                console.log(data);
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+                document.getElementById('submit').innerText = 'Shortened!';
+                document.getElementById('submit').disabled = true;
+                navigator.clipboard.writeText(data.body.shortLink);
+                showToast(`Shortlink created and copied: ${data.body.shortLink}`);
+            } catch (error) {
+                // console.error(error);
+                showToast(error.message);
+            }
         });
-        const data = await response.json();
-        console.log(data);
-        if (data.error) {
-          throw new Error(data.error);
-        }
-        document.getElementById('message').innerText = `Shortlink created and copied: ${data.body.shortLink}`;
-        document.getElementById('submit').innerText = 'Shortened!';
-        document.getElementById('submit').disabled = true;
-        navigator.clipboard.writeText(data.body.shortLink);
-      } catch (error) {
-        console.error(error);
-        document.getElementById('message').innerText = error.message;
-      }
-    });
-  </script>
-</body>
-</html>
 
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.innerText = message;
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+    </script>
+</body>
+
+</html>
