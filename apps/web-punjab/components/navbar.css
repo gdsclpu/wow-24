@@ -6,22 +6,19 @@ body {
 
 .navbar {
     background-color:white;
-    overflow: hidden;
+
     padding: 5px;
-    /* border-radius: 5px; */
-    display: flex;
-    justify-content: space-between;
     box-shadow: 2px 2px 4px #808080;
 }
 
 .navbar a {
+    float: inline-end;
     font-size: 14px;
-    display: block;
+    padding: 10px;
     color: black;
-    text-align: center;
-    padding: 5px;
     text-decoration: none;
-    align-self: center;
+    vertical-align: baseline;
+    text-align: center;
 }
 .left{
     border: 10px;
