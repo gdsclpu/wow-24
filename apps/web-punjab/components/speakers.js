@@ -1,5 +1,5 @@
 import "../style.css"
-import "../styles/speakers.css"
+// import "../styles/speakers.css"
 const SPEAKERS = [
     {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
         instagram:"#",
