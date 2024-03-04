@@ -250,6 +250,73 @@ img {
   background-color: var(--first-color-alt);
 }
 
+/*====== Why join wow, Make connection, 1500+ component ======*/
+.flex-row-align-start-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.multi-paragraph {
+  white-space: pre-line;
+  font-size: var(--normal-font-size);
+}
+
+.flex-column-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  padding: 10rem 0;
+}
+
+.flex-column-center-container p {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  font-weight: var(--font-medium);
+}
+
+.second-color {
+  color: var(--second-color);
+}
+
+.third-color {
+  color: var(--third-color);
+}
+
+#why-join-wow-details {
+  gap: 10rem;
+}
+
+#why-join-wow-details h2 {
+  font-size: var(--biggest-font-size);
+}
+
+#text-1500-section h2 {
+  font-size: var(--text-1500-font-size);
+}
+
+@media only screen and (max-width: 767px) {
+  .flex-row-align-start-container {
+    flex-wrap: wrap !important;
+  }
+
+  #text-1500-section h2 {
+    font-size: 7rem !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #text-1500-section h2 {
+    font-size: 6rem !important;
+  }
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
