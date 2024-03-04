@@ -397,25 +397,7 @@ img {
   height: 7rem;
 }
 
-@media screen and (max-width: 767px) {
-  .time-data span{
-    font-size:4vw;
-    width: 4rem;
-    height: 4rem;
-  }
 
-  .time-data{
-    gap:0.5rem;
-  }
-
-  .actual-timer{
-    gap: 1rem;
-  }
-  .timer-container{
-    padding: 1rem 2rem;
-  }
-
-}
 
 @media screen and (max-width: 1080px) {
   .time-data span{
@@ -434,11 +416,32 @@ img {
   }
 }
 
+
+@media screen and (max-width: 767px) {
+  .time-data span{
+    font-size:4vw;
+    width: 3.5rem;
+    height: 4rem;
+  }
+
+  .time-data{
+    gap:0.5rem;
+  }
+
+  .actual-timer{
+    gap: 1rem;
+  }
+  .timer-container{
+    padding: 1rem 2rem;
+  }
+
+}
+
 @media screen and (max-width: 576px) {
   .time-data span{
-    width: 2.6rem;
+    width: 2rem;
     font-size:5vw;
-    height: 4rem;
+    height: 3rem;
     padding:0.6rem 0.6rem;
   }
   .timer-container{
