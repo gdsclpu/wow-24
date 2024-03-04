@@ -1,7 +1,7 @@
 import "../style.css"
 
 document.querySelector('#timer').innerHTML = `
-<div class="timer-parent-container">
+<section class="timer-parent-container container">
   <div class="timer-container">
     <h2 class="timer-heading">Grab Your Exclusive Discount</h2>
     <p class="timer-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui culpa fuga, voluptatem voluptatibus iure aliquam consectetur et nesciunt voluptas eligendi commodi ullam beatae labore illum mollitia sit natus odio. Magnam.</p>
@@ -40,7 +40,7 @@ document.querySelector('#timer').innerHTML = `
       </div>
     </div>
   </div>
-</div>
+</section>
 `
 const targetDate = new Date("March 5, 2024 15:00:00").getTime(); // Change the Time According to your need
 

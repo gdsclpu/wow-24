@@ -342,8 +342,7 @@ img {
 
 
 .timer-parent-container{
-  position: absolute;
-  top: 20%;
+  margin-top: var(--header-height); /* to avoid the header */
 }
 
 .timer-container{
