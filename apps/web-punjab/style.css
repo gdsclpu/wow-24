@@ -317,6 +317,55 @@ img {
   }
 }
 
+/*============ Who should join us ============*/
+
+#who-should-join-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10rem 0rem;
+}
+
+.flex-row-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.half-width-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "left-img right-top-img ." "left-img right-bottom-img ." ". . .";
+}
+
+.left-img {
+  grid-area: left-img;
+}
+
+.right-top-img {
+  grid-area: right-top-img;
+}
+
+.right-bottom-img {
+  grid-area: right-bottom-img;
+}
+
+#who-should-join-us h2 {
+  font-size: var(--biggest-font-size);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
