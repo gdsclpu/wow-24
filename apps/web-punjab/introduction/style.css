@@ -1,0 +1,286 @@
+*{
+    font-family: ;
+}
+.headline{
+    display: grid;
+    text-align: center;
+    font-size: 55px;
+    font-family: sans-serif;
+    font-weight: 360px;
+    width: 80%;
+    margin-left: 9%;
+}
+.intro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.wow{
+    margin-top: 10%;
+}
+.wow span{
+    font-size: 90px;
+    vertical-align: middle;
+    margin-left: 20px;
+    text-align: center;
+    position: relative;
+    top: -45px;
+}
+.slogan{
+    font-size: 60px;
+    margin-left: 5px;
+    margin-top: -15px;
+}
+.main-description {
+    margin-top: -15px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+.outer-btns{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.btns{
+    font-size: 15px;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+}
+.background-blue{
+    background-color: #5592F6;
+    border-color: transparent;
+}
+.background-transparent{
+    background-color: transparent;
+    border-color: lightgray;
+}
+.color-blue{
+    color: #5592F6;   
+}
+.color-grey{
+    color: #696969;
+}
+.color-lightgrey{
+    color: #808080;
+}
+.color-green{
+    color: #1BA261;
+}
+@media only screen and (max-width: 430px) {
+    .headline {
+        font-size: 22px;
+        text-align: center;
+    }
+    .intro{
+        grid-template-rows: 333px auto;
+    }
+    
+    .logo img{
+        height: 333px;
+        margin-left: -50px;        
+    }
+    .description {
+        margin-left: -175px;
+        margin-top: 180%;
+    }
+    .wow img{
+        height: 72px ;
+    }
+    .wow span{
+        font-size: 75px;
+        position: relative;
+        top: -35px;
+    }
+    .slogan{
+        font-size: 0px;
+    }
+    .main-description{
+        width: 88%;
+        text-align: justify;
+    }
+    .btns{
+        margin-left: 20px;
+    }
+} 
+@media screen and (max-width: 350px) {
+    .headline {
+        font-size: 22px;
+        text-align: center;
+    }
+    .intro{
+        grid-template-rows: 333px auto;
+    }
+    
+    .logo img{
+        height: 260px;
+        margin-left: -50px;        
+    }
+    .description {
+        margin-left: -125px;
+        margin-top: 180%;
+    }
+    .wow img{
+        height: 52px ;
+    }
+    .wow span{
+        font-size: 50px;
+        position: relative;
+        top: -25px;
+    }
+    .slogan{
+        font-size: 0px;
+    }
+    .main-description{
+        width: 88%;
+        text-align: justify;
+        margin-top: 8px;
+        font-size: 15px;
+    }
+    .btns{
+        margin-left: 5px;
+        padding: 5px 9px;
+    }   
+}
+@media only screen and (max-width: 380px) {
+    .logo img{
+        height: 300px;
+    }
+    .main-description{
+        padding-left: 15px;
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 576px) {
+    .headline {
+        font-size: 30px;
+    }
+    .intro {
+        grid-template-columns: 1fr 1fr;
+    }
+    .wow {
+        margin-top: 5%;
+    }
+
+}
+
+@media screen and (min-width: 767px) {
+    .headline {
+        font-size: 40px;
+    }
+    .intro {
+        grid-template-columns: 1fr 1fr;
+    }
+    .wow {
+        margin-top: 8%;
+    }
+    .logo img{ 
+        height: 333px;
+        margin-left: -80px;
+    }
+    .wow img{
+        height: 52px;
+    }
+    .wow span{
+        font-size: 50px;
+        position: relative;
+        top: -21px;
+    }
+    .slogan{
+        font-size: 40px;
+    }
+    .main-description {
+        margin-top: -25px;
+        font-size: 15px;
+    }
+
+}
+@media screen and (min-width: 1023px) {
+    .headline {
+        font-size: 45px;
+    }
+    .intro {
+        grid-template-columns: 1fr 1fr;
+    }
+    .wow {
+        margin-top: 10%;
+    }
+    .logo img{
+        height: 433px;
+        margin-left: -60px;
+    }
+}
+@media screen and (min-width: 1040px) {
+    .headline {
+        font-size: 50px;
+    }
+    .intro {
+        grid-template-columns: 1fr 1fr;
+    }
+    .logo img{
+        height: 480px;
+        margin-left: 40px;
+    }
+    .wow {
+        margin-top: 12%;
+    }
+    .wow img{
+        height: 72px;
+    }
+    .wow span{
+        font-size: 60px;
+        top: -30px;
+    }
+    .slogan{
+        font-size: 60px;
+    }
+    .main-description{
+        font-size: 25px;
+    }
+}
+@media screen and (min-width: 2048px) {
+    .headline {
+        font-size: 120px;
+    }
+    .intro {
+        grid-template-columns: 1fr 1fr;
+    }
+    .description{
+        margin-top: -60px;
+    }
+    .logo img{
+        height: 900px;
+    }
+    .wow {
+        margin-top: 15%;
+    }
+    .wow img{
+        height: 142px;
+    }
+    .wow span{
+        font-size: 120px;
+        top: -70px;
+    }
+    .slogan{
+        font-size: 120px;
+        margin-top: -50px;
+    }
+    .main-description{
+        font-size: 40px;
+        margin-top: -70px;
+    }
+    .btns{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width: 3048px) {
+    .headline {
+        font-size: 70px;
+    }
+    .intro {
+        grid-template-columns: 1fr 1fr;
+    }
+    .wow {
+        margin-top: 20%;
+    }
+}
