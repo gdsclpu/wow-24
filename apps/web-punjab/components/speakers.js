@@ -55,7 +55,7 @@ const STRIPCOLORS = ["var(--second-color)",
 
 document.querySelector('#speakers').innerHTML = `
 
-<div class="section fs_section">
+<div class="section fs_section container">
     <img class="fs_star_img" src="/images/star.png"/>
 
     <h1 class="section__title fs_title" >Featured Speakers</h1>
