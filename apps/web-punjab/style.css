@@ -26,6 +26,7 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
   --tiny-font-size: 0.625rem;
+  --text-1500-font-size: 10rem;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
@@ -50,6 +51,7 @@
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
+    --text-1500-font-size: 15rem;
   }
 
 }
@@ -437,6 +439,122 @@ img {
   background-color: var(--first-color-alt);
 }
 
+/*====== Why join wow, Make connection, 1500+ component ======*/
+.flex-row-align-start-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.multi-paragraph {
+  white-space: pre-line;
+  font-size: var(--normal-font-size);
+}
+
+.flex-column-center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  padding: 10rem 0;
+}
+
+.flex-column-center-container p {
+  font-size: var(--h3-font-size);
+  text-align: center;
+  font-weight: var(--font-medium);
+}
+
+.second-color {
+  color: var(--second-color);
+}
+
+.third-color {
+  color: var(--third-color);
+}
+
+#why-join-wow-details {
+  gap: 10rem;
+}
+
+#why-join-wow-details h2 {
+  font-size: var(--biggest-font-size);
+}
+
+#text-1500-section h2 {
+  font-size: var(--text-1500-font-size);
+}
+
+@media only screen and (max-width: 767px) {
+  .flex-row-align-start-container {
+    flex-wrap: wrap !important;
+  }
+
+  #text-1500-section h2 {
+    font-size: 7rem !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #text-1500-section h2 {
+    font-size: 6rem !important;
+  }
+}
+
+/*============ Who should join us ============*/
+
+#who-should-join-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10rem 0rem;
+}
+
+.flex-row-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.half-width-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "left-img right-top-img ." "left-img right-bottom-img ." ". . .";
+}
+
+.left-img {
+  grid-area: left-img;
+}
+
+.right-top-img {
+  grid-area: right-top-img;
+}
+
+.right-bottom-img {
+  grid-area: right-bottom-img;
+}
+
+#who-should-join-us h2 {
+  font-size: var(--biggest-font-size);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -571,3 +689,125 @@ img {
     zoom: 2;
   }
 }
+
+
+
+/*=============== TIMER ===============*/
+
+
+.timer-parent-container{
+  margin-top: var(--header-height); /* to avoid the header */
+}
+
+.timer-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 10rem;
+}
+
+.timer-heading{
+  color: var(--second-color);
+  font-size: 2rem;
+}
+
+.timer-paragraph{
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+
+.actual-timer {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.time-data{
+  display: flex;
+  gap: 1rem;
+}
+
+.time .value{
+  padding-top: 1rem;
+  font-weight: var(--font-semibold);
+  font-size: var(--normal-font-size);
+  color: var(--third-color);
+}
+
+.time-data span{
+  background-color: var(--first-color);
+  border: var(--first-color-alt) solid;
+  font-size: 5vw;
+  border-radius: 10px;
+  /* padding:1rem 1rem; */
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 7rem;
+}
+
+
+
+@media screen and (max-width: 1080px) {
+  .time-data span{
+    width: 4rem;
+    font-size:4vw;
+    height: 5rem;
+  }
+  .timer-container{
+    padding: 1rem 2rem;
+  }
+  .time-data{
+    gap:0.5rem;
+  }
+  .actual-timer{
+    gap: 1.8rem;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .time-data span{
+    font-size:4vw;
+    width: 3.5rem;
+    height: 4rem;
+  }
+
+  .time-data{
+    gap:0.5rem;
+  }
+
+  .actual-timer{
+    gap: 1rem;
+  }
+  .timer-container{
+    padding: 1rem 2rem;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .time-data span{
+    width: 2rem;
+    font-size:5vw;
+    height: 3rem;
+    padding:0.6rem 0.6rem;
+  }
+  .timer-container{
+    padding: 1rem 2rem;
+  }
+  .time-data{
+    gap:0.3rem;
+  }
+  .actual-timer{
+    gap: 0.8rem;
+  }
+  .time .value{
+    font-size: var(--small-font-size);
+  }
+}
+

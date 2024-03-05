@@ -1,22 +1,32 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GDSC WOW 24</title>
-</head>
-
-<body>
-  <div id="nav"></div>
-  <div id="app"></div>
-  <div id="speakers"></div>
-
-  <script type="module" src="/main.js"></script>
-  <script type="module" src="/components/navbar.js"></script>
-  <script type="module" src="/components/speakers.js"></script>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDSC WOW 24</title>
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div id="app"></div>
+    <div id = "timer"></div>
+    <div id="speakers"></div>
+    <!-- The inline styling below, margin-top: 10rem, is supposed to be removed, it's added as of now to make the section visible. When the sections above it will be added in the website, this styling can be removed -->
+    <div
+      id="why-join-wow-details"
+      class="container grid"
+    ></div>
+    <div
+      class="container flex-column-center-container"
+      id="text-1500-section"
+    ></div>
+    <div id="who-should-join-us" class="container"></div>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/components/navbar.js"></script>
+    <script type="module" src="/components/timer.js"></script>
+    <script type="module" src="/components/speakers.js"></script>
+    <script type="module" src="/components/whyJoinWowSection.js"></script>
+    <script type="module" src="/components/text1500Section.js"></script>
+    <script type="module" src="/components/whoShouldJoinSection.js"></script>
+  </body>
 </html>
