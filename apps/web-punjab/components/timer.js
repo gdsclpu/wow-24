@@ -68,5 +68,21 @@ const countdownInterval = setInterval(() => {
   document.getElementById("seconds-unit").textContent = seconds%10;
   document.getElementById("seconds-tens").textContent = Math.floor(seconds/10);
 
+  // When the countdown expires set everything to Zero
+  if (timeDifference < 0) {
+    clearInterval(countdownInterval);
+
+    document.getElementById("days-tens").textContent = 0;
+    document.getElementById("days-unit").textContent = 0;
+    document.getElementById("hours-unit").textContent = 0;
+    document.getElementById("hours-tens").textContent = 0;
+    
+    document.getElementById("minutes-unit").textContent = 0;
+    document.getElementById("minutes-tens").textContent = 0;
+    document.getElementById("seconds-unit").textContent = 0;
+    document.getElementById("seconds-tens").textContent = 0;
+    
+}
+
  
 }, 1000);
