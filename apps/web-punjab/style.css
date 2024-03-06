@@ -898,4 +898,65 @@ img {
     font-size: var(--small-font-size);
   }
 }
+ 
+
+/*=============== SPONSORS ===============*/
+
+.sponsors-container h2{
+  text-align: center;
+  color: var(--third-color);
+  font-size: var(--biggest-font-size);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sponsors-container{
+  margin: 80px;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%); /* Start from offscreen right */
+  }
+  100% {
+    transform: translateX(-200%); /* End at normal position */
+  }
+}
+
+.sponsor-list {
+  display: flex; 
+  animation: scroll 15s linear infinite; 
+  scroll-snap-type: x mandatory; 
+}
+
+.sponsor-list img {
+  width: 200px; 
+  height: 150px; 
+  object-fit: contain; 
+  margin-right: 30px; 
+}
+
+/* Adjust slide width for smaller screens */
+@media only screen and (max-width: 768px) {
+  .sponsor-list {
+    animation: scroll-mobile 8s linear infinite; 
+  }
+
+  @keyframes scroll-mobile {
+    0% {
+      transform: translateX(100%); /* Start from offscreen right */
+    }
+    100% {
+      transform: translateX(-700%); /* Change here if it snaps */
+    }
+  }
+
+  .sponsor-list img {
+    flex: 0 0 auto; 
+    scroll-snap-align: center; 
+    margin-right: 10px; 
+  }
+
+}
 
