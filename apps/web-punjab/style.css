@@ -830,7 +830,8 @@ img {
 
 .timer-heading{
   color: var(--second-color);
-  font-size: 2rem;
+  font-size: var(--h1-font-size);
+  white-space: nowrap;
 }
 
 .timer-paragraph{
@@ -912,9 +913,9 @@ img {
 
 @media screen and (max-width: 576px) {
   .time-data span{
-    width: 2rem;
+    width: 2.5rem;
     font-size:5vw;
-    height: 3rem;
+    height: 3.5rem;
     padding:0.6rem 0.6rem;
   }
   .timer-container{
@@ -930,9 +931,6 @@ img {
     font-size: var(--small-font-size);
   }
 }
-
-
-
 
 /*=============== TICKETS SECTION ===============*/
 .ts_card {
