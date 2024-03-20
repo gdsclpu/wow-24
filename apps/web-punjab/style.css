@@ -165,6 +165,8 @@ img {
   justify-content: space-between;
   align-items: center;
   height: var(--header-height);
+  padding-right: 90px;
+ 
 }
 
 .nav__logo {
@@ -184,7 +186,116 @@ img {
   color: var(--first-color);
 }
 
+.nav_geo {
+  width: 190px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  border-left: 6px solid var(--second-color);
+  right: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  
 
+}
+
+.nav_geo * {
+  transition-duration: 400ms;
+}
+
+.nav_geo_star {
+  aspect-ratio: 1;
+  height: 60%;
+  margin-right: 10px;
+}
+
+.nav_geo_main {
+
+  font-weight: 500;
+  font-size: var(--h3-font-size);
+  margin-right: 5px;
+
+}
+
+.nav_geo_dropdown_arrow {
+  width: 20px;
+  aspect-ratio: 1;
+
+}
+
+.nav_geo_selector {
+
+  height: fit-content;
+  max-height: 0px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  left: 0px;
+  top: calc(var(--header-height) + 1rem);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  transition-duration: 400ms;
+
+  /* padding-top:var(--header-height); */
+}
+
+.nav_geo:hover .nav_geo_selector {
+  /* height: fit-content; */
+  max-height: none;
+  transition-duration: 400ms;
+  
+}
+.nav_geo:hover .nav_geo_item {
+  /* height: fit-content; */
+  width:100% ;
+  max-height: none;
+  transition-duration: 400ms;
+  
+}
+
+.nav_geo_item {
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 15px;
+  
+  overflow: hidden;
+  width: 0%;
+}
+
+.nav_geo_item img {
+  aspect-ratio: 1;
+  height: 30px;
+  margin-right: 10px;
+  filter: grayscale();
+}
+
+.nav_geo_item:hover img {
+  filter: none
+}
+
+
+.nav_geo_item:hover h3{
+  color: var(--second-color);
+}
+
+.nav_geo_item h3{
+  font-weight: 500;
+  font-size: var(--normal-font-size);
+
+
+}
 
 @media screen and (max-width: 1024px) {
   .nav__menu {
@@ -743,6 +854,17 @@ img {
 @media screen and (min-width: 767px) {
 
 
+}
+
+
+@media screen and (max-width: 1023px) {
+  .nav_geo {
+    width: 150px;
+  }
+  .nav_geo_selector {
+    top: calc(var(--header-height) - 0.6rem);
+  }
+  
 }
 /* For large devices */
 @media screen and (min-width: 1023px) {
