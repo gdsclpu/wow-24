@@ -7,6 +7,7 @@ document.querySelector("#hero").innerHTML = `
     <p class="multi-paragraph">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </p>
+    <a id="hero_cta" href="https://gdscwow.xyz/">
     <button class="ts_bookNow_button">Get Tickets Now</button>
   </div>
   <div class="section">
