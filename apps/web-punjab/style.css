@@ -1157,7 +1157,7 @@ img {
 .ts_image_parent {
   display: flex;
   width: 100%;
-  flex-direction: ;
+  /* flex-direction: ; */
 
 }
 .ts_image {

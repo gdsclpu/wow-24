@@ -97,24 +97,5 @@
     <script type="module" src="/components/tickets.js"></script>
     <script type="module" src="/components/whoShouldJoinSection.js"></script>
     <script type="module" src="/components/footer.js"></script>
-    <script>
-      var requestOptions = {
-      method: 'GET',
-    };
-
-    fetch("https://ip.ba3a.tech/", requestOptions)
-      .then(response => response.json())
-      .then(result => {
-        // console.log({result});
-        changeDetails(result.region);
-      })
-      .catch(error => console.log('error', error));
-
-      function changeDetails(region) {
-        // console.log(region);
-        // changeLocation(region)
-        document.getElementById("hero_cta").href = `https://punjab.gdscwow.xyz`
-      }
-    </script>
   </body>
 </html>
