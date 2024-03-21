@@ -42,7 +42,7 @@ document.querySelector('#timer').innerHTML = `
   </div>
 </section>
 `
-const targetDate = new Date("April 1, 2024 00:00:00").getTime(); // Change the Time According to your need
+const targetDate = new Date("March 22, 2024 00:00:00").getTime(); // Change the Time According to your need
 
 
 const countdownInterval = setInterval(() => {
