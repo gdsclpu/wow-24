@@ -68,9 +68,8 @@ const getRegion = async () => {
   return HOTSPOT_MAP[data.regionName.toLowerCase()] || "PUN"
 }
 
-let region = await getRegion()
 
-export function changeDetails(region) {
+export async function changeDetails(selectedRegion) {
   // Make dynamic
   // 1. Headline
   // 2. Ticket link
@@ -78,9 +77,9 @@ export function changeDetails(region) {
   // 4. Speakers
   // 5. Ticket Benefits
   // 6.  
-  console.log(`Settion region to ${region}`);
+  let region = selectedRegion || await getRegion();
+  console.log(`Setting region to ${region}`);
   document.getElementById("hero_cta").href = HOTSPOT_DETAILS[region].tickeLink;
-
 }
 
-changeDetails(region);
+changeDetails(null);
