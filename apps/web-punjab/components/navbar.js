@@ -39,39 +39,32 @@ document.querySelector('#nav').innerHTML = `
     <div class="nav__menu">
         <ul class="nav__list">
             <li class="nav__item">
-                <a href="#home" class="nav__link active-link">
+                <a href="#" class="nav__link active-link">
                     <i class="bx bx-home-alt-2"></i>
                     <span>Home</span>
                 </a>
             </li>
 
             <li class="nav__item">
-                <a href="#popular" class="nav__link">
+                <a href="#speakers" class="nav__link">
                     <i class="bx bx-building-house"></i>
-                    <span>Region</span>
+                    <span>Speakers</span>
                 </a>
             </li>
 
             <li class="nav__item">
-                <a href="#value" class="nav__link">
+                <a href="#tickets" class="nav__link">
                     <i class="bx bx-award"></i>
-                    <span>About</span>
+                    <span>Tickets</span>
                 </a>
             </li>
 
-            <li class="nav__item">
-                <a href="#contact" class="nav__link">
-                    <i class="bx bx-phone"></i>
-                    <span>Activities</span>
-                </a>
-            </li>
-
-            <li class="nav__item">
+            <!-- <li class="nav__item">
                 <a href="#contact" class="nav__link">
                     <i class="bx bx-phone"></i>
                     <span>Sessions</span>
                 </a>
-            </li>
+            </li> -->
         </ul>
     </div>
     <div class="nav_geo">

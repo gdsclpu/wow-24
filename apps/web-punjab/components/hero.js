@@ -7,14 +7,15 @@ document.querySelector("#hero").innerHTML = `
   <div class="hero_left">
         <h1 class="third-color headline hero_headline">Dil Kehnda </br><span id='dynamicText'>WOW!</span></h1>
       <p class="multi-paragraph hero_desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      GDSC (Wonder of Wonders), aka GDSC WOW, is India's biggest student-run tech festival! This annual event brings together 20,000+ students from 500+ universities across the country for a massive celebration of technology and innovation.
       </p>
     <div class="ts_bookNow_button_container">
       <div class="button_bg"></div>
-      
+      <a id="hero_cta" href="https://gdscwow.xyz/">
       <button class="ts_bookNow_button">
         Get Tickets Now
       </button>
+      </a>
       
     </div>
   </div>
@@ -26,7 +27,6 @@ document.querySelector("#hero").innerHTML = `
   
   </div>
   
-  <a id="hero_cta" href="https://gdscwow.xyz/">
   </div>
   
   </div>`

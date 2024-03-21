@@ -1,47 +1,47 @@
 import "../style.css"
 // import "../styles/speakers.css"
 const SPEAKERS = [
-    {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
         Website:"#"
     }},
-    {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Engineer",org:"Adobe, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
         twitter:"#",
         github:"#"
     }},
-    {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
         // twitter:"#"
     }},
-    {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
         twitter:"#"
     }},
-    {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"#"
-    }},
-    {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"#"
-    }},
-    {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"#"
-    }},
-    {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"#"
-    }},
+    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    //     instagram:"#",
+    //     facebook:"#",
+    //     twitter:"#"
+    // }},
+    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    //     instagram:"#",
+    //     facebook:"#",
+    //     twitter:"#"
+    // }},
+    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    //     instagram:"#",
+    //     facebook:"#",
+    //     twitter:"#"
+    // }},
+    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    //     instagram:"#",
+    //     facebook:"#",
+    //     twitter:"#"
+    // }},
     
 ]
 
