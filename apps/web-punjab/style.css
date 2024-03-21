@@ -1285,7 +1285,7 @@ img {
   max-width: 95%;
   text-wrap: wrap;
   line-height: 200px;
-  font-size: calc(var(--headline-font-size) + 1.3rem);
+  font-size: var(--headline-font-size);
   font-weight: 700;
   line-height: 1;
   color: var(--third-color);
@@ -1296,7 +1296,7 @@ img {
 #dynamicText {
     color: var(--second-color);
   
-   font-size: calc(var(--headline-font-size) + 0.8rem);
+   font-size: calc(var(--headline-font-size) + 1.3rem);
    font-weight: 800;
    
 
