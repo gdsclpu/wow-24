@@ -97,7 +97,10 @@ return `
     <ul style="list-style-type:disc;margin-left:15px">${ticket.benefits.reduce((prev,cur)=>prev+`<li class="ts_card_subtitle">${cur}</li>`,"")}</ul>
 
     <a class="ts_bookNow" href="${ticket.link||"#"}">
+    <div class="ts_bookNow_button_container">
+      <div class="button_bg"></div>
     <button class="ts_bookNow_button">Book Now</button>
+    </div>
     </a>
 
 

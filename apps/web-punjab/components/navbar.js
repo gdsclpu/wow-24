@@ -21,7 +21,7 @@ document.querySelector('#nav').innerHTML = `
 <header class="header" id="header">
 <nav class="nav container">
     <a href="#" class="nav__logo">
-        <img src="/images/logo.png" alt="" class="nav__logo-img">
+        <img src="/images/logobig.png" alt="" class="nav__logo_img">
     </a>
 
     <div class="nav__menu">
