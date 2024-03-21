@@ -11,6 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
     <!-- Primary Meta Tags -->
     <title>Join GDSC WOW 2024 | Google Developer Student Club</title>
     <meta name="title" content="Join GDSC WOW 2024 | Google Developer Student Club" />
@@ -105,13 +106,14 @@
     fetch("https://ip.ba3a.tech/", requestOptions)
       .then(response => response.json())
       .then(result => {
-        console.log(result);
+        // console.log({result});
         changeDetails(result.region);
       })
       .catch(error => console.log('error', error));
 
       function changeDetails(region) {
-        console.log(region);
+        // console.log(region);
+        // changeLocation(region)
         document.getElementById("hero_cta").href = `https://punjab.gdscwow.xyz`
       }
     </script>
