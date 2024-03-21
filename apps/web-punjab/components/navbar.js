@@ -24,7 +24,7 @@ function changeLocation(Region){
     star.style.rotate = star.style.rotate=='180deg'?'0deg':'180deg'
 
 
-    //changeDetails(Region)
+    changeDetails(Region)
 }
 
 
