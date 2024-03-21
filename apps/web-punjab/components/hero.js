@@ -5,7 +5,7 @@ document.querySelector("#hero").innerHTML = `
 <div class="flex-row-align-start-container container">
   <div class="section hero_main">
   <div class="hero_left">
-        <h1 class="third-color headline hero_headline">Dil Kehnda <span id='dynamicText'>WOW!</span></h1>
+        <h1 class="third-color headline hero_headline">Dil Kehnda </br><span id='dynamicText'>WOW!</span></h1>
       <p class="multi-paragraph hero_desc">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
@@ -30,3 +30,24 @@ document.querySelector("#hero").innerHTML = `
   </div>
   
   </div>`
+
+
+   var typing=new Typed("#dynamicText", {
+       strings: [
+    "WOW" ,          //English
+    "वाह!",         // Hindi
+    "ওয়াও!",    // Bengali
+    "வாவ்!",       // Tamil
+    "వావ్!",       // Telugu
+    "ವಾವ್!",       // Kannada
+    "വാവ്!",       // Malayalam
+    "વાહ!",        // Gujarati
+    "वाह!",         // Marathi
+    "ਵਾਹ!",        // Punjabi
+    "واہ!"         // Urdu
+],
+       typeSpeed: 100,
+       backSpeed: 100,
+       backDelay:900,
+       loop: true,
+   });

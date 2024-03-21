@@ -1,17 +1,29 @@
 import "../style.css"
 
-const DEFAULT_LOCATION = "punjab";
-var LOCATION_LIST = ['Punjab','Delhi','Pune']
+const DEFAULT_LOCATION = "WOW";
+var LOCATION_LIST = { 
+    PB:'Punjab',
+    CH:'Punjab',
+    MH: 'Pune' ,
+    DL:'Delhi'
+                    }
 
 
+let WOW_REGIONS = Object.values(LOCATION_LIST).filter((e,i)=>Object.values(LOCATION_LIST).indexOf(e)==i)
 
-function changeLocation(State){
+function changeLocation(Region){
 
-    if(LOCATION_LIST.map(i=>i.toLowerCase()).includes(State.toLowerCase())){
-        document.getElementById("userState").innerText = State[0].toUpperCase() + State.slice(1)
+
+    if(Object.keys(LOCATION_LIST).map(i=>i.toUpperCase()).includes(Region.toUpperCase())){
+        document.getElementById("userState").innerText = LOCATION_LIST[Region.toUpperCase()]
+    }else{
+        document.getElementById("userState").innerText = LOCATION_LIST['PB']
     }
      let star = document.querySelector('.nav_geo_star')
     star.style.rotate = star.style.rotate=='180deg'?'0deg':'180deg'
+
+
+    changeDetails(Region)
 }
 
 
@@ -70,14 +82,7 @@ document.querySelector('#nav').innerHTML = `
         </svg>
 
         <div class="nav_geo_selector">
-            <div class="nav_geo_item">
-                <img class="" src="/images/star.png"/>
-                <h3 class="">Pune</h3>
-            </div>
-            <div class="nav_geo_item">
-                <img class="" src="/images/star.png"/>
-                <h3 class="">Delhi</h3>
-            </div>
+           
             
         </div>
 
@@ -87,12 +92,54 @@ document.querySelector('#nav').innerHTML = `
 </header>
 `
 
+
+
+
+function setSelector(LIST){
+    console.log({LIST});
+   return LIST.reduce((prev,curr)=>prev+`<div id="geo-${Object.keys(LOCATION_LIST).filter((cr)=>curr==LOCATION_LIST[cr])[0]}" class="nav_geo_item">
+                <img class="" src="/images/star.png"/>
+                <h3 class="">${curr}</h3>
+            </div>`,"")
+}
+
+document.querySelector(".nav_geo_selector").innerHTML = setSelector(WOW_REGIONS)
+
+
 document.querySelectorAll('.nav_geo_item').forEach(item => {
   item.addEventListener('click', function() {
-    let selLoc = item.querySelector("h3").innerText
+    let selLoc = item.getAttribute("id").replace("geo-","")
+    console.log(selLoc);
     changeLocation(selLoc);
    
   });
 });
 
-changeLocation(DEFAULT_LOCATION)
+
+/*
+
+ <div class="nav_geo_item">
+                <img class="" src="/images/star.png"/>
+                <h3 class="">Pune</h3>
+            </div>
+            <div class="nav_geo_item">
+                <img class="" src="/images/star.png"/>
+                <h3 class="">Delhi</h3>
+            </div>
+*/
+
+
+ var requestOptions = {
+      method: 'GET',
+    };
+
+    fetch("https://ip.ba3a.tech/", requestOptions)
+      .then(response => response.json())
+      .then(result => {
+        // console.log({result});
+        changeLocation(result.region)
+        // changeDetails(result.region);
+      })
+      .catch(error => console.log('error', error));
+
+// changeLocation(DEFAULT_LOCATION)
