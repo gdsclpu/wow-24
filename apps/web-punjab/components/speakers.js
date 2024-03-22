@@ -1,23 +1,38 @@
 import "../style.css"
 // import "../styles/speakers.css"
 const SPEAKERS = [
-    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    {name:"Tanmay Kumar",role:"Technical Product Engineer",org:"Boeing, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
         Website:"#"
     }},
-    {name:"TBA",role:"Engineer",org:"Adobe, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Software Engineer - II",org:"PayPal, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
         twitter:"#",
         github:"#"
     }},
-    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Member of Technical Staff - II",org:"Adobe, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
         // twitter:"#"
     }},
-    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Staff Developer Advocate",org:"MongoDB, India",image:"/images/speaker.png",socials:{
+        instagram:"#",
+        facebook:"#",
+        twitter:"#"
+    }},
+    {name:"TBA",role:"Head of Product and Growth",org:"Cosmocloud, India",image:"/images/speaker.png",socials:{
+        instagram:"#",
+        facebook:"#",
+        twitter:"#"
+    }},
+    {name:"TBA",role:"Developer Relations Manager",org:"Aspecta.id, United States",image:"/images/speaker.png",socials:{
+        instagram:"#",
+        facebook:"#",
+        twitter:"#"
+    }},
+    {name:"TBA",role:"Developer Ecosystem Manager",org:"ConsenSys for Metamask,<br> United States",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
         twitter:"#"
@@ -27,21 +42,7 @@ const SPEAKERS = [
     //     facebook:"#",
     //     twitter:"#"
     // }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
+
     
 ]
 
