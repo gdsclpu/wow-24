@@ -42,10 +42,15 @@ document.querySelector('#timer').innerHTML = `
   </div>
 </section>
 `
-const targetDate = new Date("March 22, 2024 00:00:00").getTime(); // Change the Time According to your need
+const targetDate = "March 23, 2024 00:00:00"; // Change the Time According to your need
+let tyx;
 
+export const setTimer = async (targetDate) => { 
+if(!targetDate)return;
+targetDate = new Date(targetDate).getTime()
+if(tyx)clearInterval(tyx);
 
-const countdownInterval = setInterval(() => {
+ tyx = setInterval(() => {
 
   const now = new Date().getTime();
   const timeDifference = targetDate - now;
@@ -86,3 +91,13 @@ const countdownInterval = setInterval(() => {
 
  
 }, 1000);
+}
+
+setTimer(targetDate)
+
+
+
+
+
+
+

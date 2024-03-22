@@ -5,7 +5,7 @@ document.querySelector("#hero").innerHTML = `
 <div class="flex-row-align-start-container container">
   <div class="section hero_main">
   <div class="hero_left">
-        <h1 class="third-color headline hero_headline">Dil Kehnda </br><span id='dynamicText'>WOW!</span></h1>
+        <h1 class="third-color headline hero_headline"><span id="hero_head">Dil Kehnda</span></br><span id='dynamicText'>WOW!</span></h1>
       <p class="multi-paragraph hero_desc">
       GDSC (Wonder of Wonders), aka GDSC WOW, is India's biggest student-run tech festival! This annual event brings together 20,000+ students from 500+ universities across the country for a massive celebration of technology and innovation.
       </p>

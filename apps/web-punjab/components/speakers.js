@@ -61,8 +61,8 @@ document.querySelector('#speakers').innerHTML = `
 
     <img class="fs_star_img" src="/images/star.png"/>
 
-    <h1 class="section__title fs_title" >Featured Speakers</h1>
-    <div class="container fs_section">${SPEAKERS.reduce((prev,speaker)=>prev + speakercard(speaker),"")}</div>
+    <h1 id="fs_section_title" class="section__title fs_title" >Featured Speakers</h1>
+    <div id="fs_datas" class="container fs_section"></div>
 </div>
 
 <svg hidden="hidden">
@@ -158,5 +158,13 @@ return `
 
 
 `
+
+}
+
+
+export async function setSpeakers(SPEAKERS){
+  document.getElementById("fs_section_title").innerText = SPEAKERS.length>0?"Featured Speakers":""
+
+  document.getElementById("fs_datas").innerHTML = SPEAKERS.reduce((prev,speaker)=>prev + speakercard(speaker),"")
 
 }
