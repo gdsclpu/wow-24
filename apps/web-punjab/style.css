@@ -705,6 +705,9 @@ img {
   #text-1500-section h2 {
     font-size: 7rem !important;
   }
+  #text-1500-section p {
+  margin-top: -40px;
+}
 }
 
 @media screen and (max-width: 576px) {

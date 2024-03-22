@@ -3,12 +3,12 @@ document.querySelector('#footer').innerHTML = `
 <footer class="footer">
       <div class="footer-col">
         <h4 class="h-1">GDSC WoW 2024</h4>
-        <span class="h-2">Why Join Us?</span>
+       <span class="h-2"> </span>
         <ul>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
-          <li><a href="#">Lorem Ipsum</a></li>
+          <li><a href="#"> </a></li>
+          <li><a href="#"> </a></li>
+          <li><a href="#"> </a></li>
+          <li><a href="#"> </a></li> 
         </ul>
 
         <div class="bottom-link">
