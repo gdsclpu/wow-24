@@ -4,7 +4,7 @@ document.querySelector('#timer').innerHTML = `
 <section class="timer-parent-container container">
   <div class="timer-container">
     <h2 class="timer-heading">Grab Super Early Bird Discount</h2>
-    <p class="timer-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui culpa fuga, voluptatem voluptatibus iure aliquam consectetur et nesciunt voluptas eligendi commodi ullam beatae labore illum mollitia sit natus odio. Magnam.</p>
+    <p>Don't miss out! Get your Super-Early Bird Tickets for GDSC WOW Punjab 2024 and lock in the lowest price! These exclusive tickets won't last long, so grab yours now and secure your spot at this exciting event.</p>
     <div class="actual-timer">
 
       <div class="time">
@@ -42,7 +42,7 @@ document.querySelector('#timer').innerHTML = `
   </div>
 </section>
 `
-const targetDate = new Date("March 22, 2024 00:00:00").getTime(); // Change the Time According to your need
+const targetDate = new Date("March 24, 2024 00:00:00").getTime(); // Change the Time According to your need
 
 
 const countdownInterval = setInterval(() => {
