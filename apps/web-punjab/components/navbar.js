@@ -2,23 +2,88 @@ import "../style.css"
 import { changeDetails } from "../switch"
 
 const DEFAULT_LOCATION = "WOW";
-var LOCATION_LIST = { 
-    PB:'Punjab',
-    CH:'Punjab',
-    MH: 'Pune' ,
-    DL:'Delhi'
-                    }
+
+const HOTSPOT_MAP = {
+  "punjab": "PUN",
+  "chandigarh": "PUN",
+  "telangana": "HYD",
+  "karnataka": "BLR",
+  "new delhi": "DEL",
+  "maharashtra": "PNE",
+  "andhra pradesh": "VZG",
+  "madhya pradesh": "IDR"
+}
+
+const HOTSPOT_DETAILS = {
+  "PUN": {
+    headline: "Dil Kehnda",
+    tickeLink: "https://konfhub.com/gdscwowpunjab2024",
+    eventDate: "April 6, 2024 10:00:00",
+    speakers: [],
+    ticketBenefits: []
+  },
+  "PNE": {
+    headline: "Dil Kehnda",
+    tickeLink: "https://konfhub.com/gdscwowpune2024",
+    eventDate: "April 6, 2024 10:00:00",
+    speakers: [],
+    ticketBenefits: []
+  },
+  "HYD": {
+    headline: "Dil Kehnda",
+    tickeLink: "https://konfhub.com/gdscwowpunjab2024",
+    eventDate: "April 6, 2024 10:00:00",
+    speakers: [],
+    ticketBenefits: []
+  },
+  "BLR": {
+    headline: "Dil Kehnda",
+    tickeLink: "https://konfhub.com/gdscwowpunjab2024",
+    eventDate: "April 6, 2024 10:00:00",
+    speakers: [],
+    ticketBenefits: []
+  },
+  "DEL": {
+    headline: "Dil Kehnda",
+    tickeLink: "https://konfhub.com/gdscwowpunjab2024",
+    eventDate: "April 6, 2024 10:00:00",
+    speakers: [],
+    ticketBenefits: []
+  },
+  "VZG": {
+    headline: "Dil Kehnda",
+    tickeLink: "https://konfhub.com/gdscwowpunjab2024",
+    eventDate: "April 6, 2024 10:00:00",
+    speakers: [],
+    ticketBenefits: []
+  },
+  "IDR": {
+    headline: "Dil Kehnda",
+    tickeLink: "https://konfhub.com/gdscwowpunjab2024",
+    eventDate: "April 6, 2024 10:00:00",
+    speakers: [],
+    ticketBenefits: []
+  }
+}
 
 
-let WOW_REGIONS = Object.values(LOCATION_LIST).filter((e,i)=>Object.values(LOCATION_LIST).indexOf(e)==i)
+let WOW_REGIONS = Object.keys(HOTSPOT_MAP).map(i=>i[0].toUpperCase()+i.split(" ")[0].slice(1) + (i.split(" ").length>1?" "+i.split(" ")[1][0].toUpperCase( )+i.split(" ")[1].slice(1):""))
 
 function changeLocation(Region){
 
+    console.log({Region});
 
-    if(Object.keys(LOCATION_LIST).map(i=>i.toUpperCase()).includes(Region.toUpperCase())){
-        document.getElementById("userState").innerText = LOCATION_LIST[Region.toUpperCase()]
+
+    if(Object.keys(HOTSPOT_MAP).map(i=>i.toLowerCase()).includes(Region.toLowerCase())){
+        document.getElementById("userState").innerText = Region[0].toUpperCase()+Region.split(" ")[0].slice(1) + (Region.split(" ").length>1?" "+Region.split(" ")[1][0].toUpperCase( )+Region.split(" ")[1].slice(1):"")
+        if(Region.split(" ")[0].length>7){
+             document.getElementById("userState").style.fontSize = "0.8rem"
+        }else{
+             document.getElementById("userState").style.fontSize = "1rem"
+
+        }
     }else{
-        document.getElementById("userState").innerText = LOCATION_LIST['PB']
+        // document.getElementById("userState").innerText = HOTSPOT_MAP['PB']
     }
      let star = document.querySelector('.nav_geo_star')
     star.style.rotate = star.style.rotate=='180deg'?'0deg':'180deg'
@@ -91,7 +156,7 @@ document.querySelector('#nav').innerHTML = `
 
 function setSelector(LIST){
     console.log({LIST});
-   return LIST.reduce((prev,curr)=>prev+`<div id="geo-${Object.keys(LOCATION_LIST).filter((cr)=>curr==LOCATION_LIST[cr])[0]}" class="nav_geo_item">
+   return LIST.reduce((prev,curr,ind)=>prev+`<div id="geo-${ind}" class="nav_geo_item">
                 <img class="" src="/images/star.png"/>
                 <h3 class="">${curr}</h3>
             </div>`,"")
@@ -102,9 +167,9 @@ document.querySelector(".nav_geo_selector").innerHTML = setSelector(WOW_REGIONS)
 
 document.querySelectorAll('.nav_geo_item').forEach(item => {
   item.addEventListener('click', function() {
-    let selLoc = item.getAttribute("id").replace("geo-","")
-    console.log(selLoc);
-    changeLocation(selLoc);
+    let selLocInd = item.getAttribute("id").replace("geo-","")
+    let myloc = Object.keys(HOTSPOT_MAP)[Number(selLocInd)]
+    changeLocation(myloc);
    
   });
 });
@@ -130,8 +195,8 @@ document.querySelectorAll('.nav_geo_item').forEach(item => {
     fetch("https://ip.ba3a.tech/", requestOptions)
       .then(response => response.json())
       .then(result => {
-        // console.log({result});
-        changeLocation(result.region)
+        console.log({result});
+        changeLocation(result.regionName.toLowerCase())
         // changeDetails(result.region);
       })
       .catch(error => console.log('error', error));
