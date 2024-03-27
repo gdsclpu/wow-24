@@ -3,7 +3,7 @@ import "../style.css";
 document.querySelector("#who-should-join-us").innerHTML =
   `<h2 class="second-color">Who Should Join Us?</h2>
 <p class="multi-paragraph">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+GDSC WOW is a vibrant tech community where you can connect with hundreds of students, professionals, and mentors. Network, collaborate, and build relationships that can lead to future opportunities. Join us and make a positive impact in the world of technology!
 </p>
 <div class="flex-row-container">
   <div class="full-width-image">

@@ -3,8 +3,8 @@ import "../style.css"
 document.querySelector('#timer').innerHTML = `
 <section class="timer-parent-container container">
   <div class="timer-container">
-    <h2 class="timer-heading">Grab Super Early Bird Discount</h2>
-    <p class="timer-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui culpa fuga, voluptatem voluptatibus iure aliquam consectetur et nesciunt voluptas eligendi commodi ullam beatae labore illum mollitia sit natus odio. Magnam.</p>
+    <h2 class="timer-heading">The Clock is Ticking!</h2>
+    <p class="timer-paragraph">Are you ready to rumble? GDSC WOW is just around the corner. Grab your tickets now.</p>
     <div class="actual-timer">
 
       <div class="time">

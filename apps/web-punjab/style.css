@@ -772,7 +772,9 @@ img {
 @media screen and (max-width: 450px) {
  
   .fs_card {
-    width: 160px;
+    width: 188px;
+    padding: 16px;
+    text-align: center;
   }
   .fs_section {
     column-gap: 15px;
