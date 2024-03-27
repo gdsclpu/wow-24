@@ -1,47 +1,45 @@
 import "../style.css"
 // import "../styles/speakers.css"
 const SPEAKERS = [
-    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Technical Product Engineer",org:"Boeing, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
-        Website:"#"
+        Website: "https://www.linkedin.com/in/tanmaykumar-nie/"
     }},
-    {name:"TBA",role:"Engineer",org:"Adobe, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Staff Developer Advocate",org:"MongoDB, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
         twitter:"#",
-        github:"#"
+        github:"#",
+        website: "https://www.linkedin.com/in/arora-megha/"
     }},
-    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Software Engineer II",org:"PayPal, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
-        // twitter:"#"
+        // twitter:"#",
+        website: "https://www.linkedin.com/in/palakawasthi/"
     }},
-    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+    {name:"TBA",role:"Member of Technical Staff II",org:"Adobe, India",image:"/images/speaker.png",socials:{
         instagram:"#",
         facebook:"#",
         twitter:"#"
     }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
+    {name:"TBA",role:"Developer Ecosystem Manager",org:"Metamask, United States",image:"/images/speaker.png",socials:{
+        instagram:"#",
+        facebook:"#",
+        twitter: "https://x.com/httpjunkie?s=21"
+    }},
+    {name:"TBA",role:"Head of Product and Growt",org:"Cosmocloud, India",image:"/images/speaker.png",socials:{
+        instagram:"#",
+        facebook:"#",
+        twitter:"#",
+        website: "https://www.linkedin.com/in/supriyapurohit27"
+    }},
+    {name:"TBA",role:"Developer Relations Manager",org:"Aspecta.id, United States",image:"/images/speaker.png",socials:{
+        instagram:"#",
+        facebook:"#",
+        twitter:"https://x.com/httpjunkie?s=21"
+    }},
     
 ]
 

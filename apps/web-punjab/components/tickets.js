@@ -31,9 +31,9 @@ const TicketTiers = [
     // color:"var(--second-color)",
     // },
     {
-    name:"Super Early Bird",
+    name:"The Clock is Ticking!",
     icon:"/images/mdi_podium-gold.png",
-    desc:"By purchasing Super - Early Bird Tickets for GDSC WOW Punjab 2024, attendees can take advantage of discounted pricing and secure their spot at the event before tickets sell out!",
+    desc:"Are you ready to rumble? GDSC WOW is just around the corner. Grab your tickets now.",
     benefits:[
         "Access to the Conference and Workshops",
         "Internship and mentorship opportunity",
