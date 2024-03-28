@@ -1,44 +1,32 @@
 import "../style.css"
 // import "../styles/speakers.css"
 const SPEAKERS = [
-    {name:"Tanmay Kumar",role:"Technical Product Engineer",org:"Boeing, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
+    {name:"Tanmay Kumar",role:"Technical Product Engineer",org:"Boeing, India",image:"/images/speakers/speaker1.jpeg",socials:{
         Website: "https://www.linkedin.com/in/tanmaykumar-nie/"
     }},
-    {name:"Megha Arora",role:"Staff Developer Advocate",org:"MongoDB, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"#",
-        github:"#",
+    {name:"Megha Arora",role:"Staff Developer Advocate",org:"MongoDB, India",image:"/images/speakers/speaker2.jpeg",socials:{
         website: "https://www.linkedin.com/in/arora-megha/"
     }},
-    {name:"Palak Awasthi",role:"Software Engineer II",org:"PayPal, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        // twitter:"#",
+    {name:"Palak Awasthi",role:"Software Engineer II",org:"PayPal, India",image:"/images/speakers/speaker3.jpeg",socials:{
         website: "https://www.linkedin.com/in/palakawasthi/"
     }},
     {name:"Mahima Hans",role:"Member of Technical Staff II",org:"Adobe, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"#"
     }},
-    {name:"Eric Bishard",role:"Developer Ecosystem Manager",org:"Metamask, United States",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
+    {name:"Eric Bishard",role:"Developer Ecosystem Manager",org:"Metamask, United States",image:"/images/speakers/speaker5.jpeg",socials:{
+        // instagram:"#",
+        // facebook:"#",
         twitter: "https://x.com/httpjunkie?s=21"
     }},
-    {name:"Supriya Purohit",role:"Head of Product and Growt",org:"Cosmocloud, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"#",
+    {name:"Supriya Purohit",role:"Head of Product and Growt",org:"Cosmocloud, India",image:"/images/speakers/speaker6.jpeg",socials:{
+        // instagram:"#",
+        // facebook:"#",
+        // twitter:"#",
         website: "https://www.linkedin.com/in/supriyapurohit27"
     }},
-    {name:"Dhruv Patel",role:"Developer Relations Manager",org:"Aspecta.id, United States",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"https://x.com/httpjunkie?s=21"
+    {name:"Dhruv Patel",role:"Developer Relations Manager",org:"Aspecta.id, United States",image:"/images/speakers/speaker7.png",socials:{
+        // instagram:"#",
+        // facebook:"#",
+        // twitter:"#"
     }},
     
 ]
