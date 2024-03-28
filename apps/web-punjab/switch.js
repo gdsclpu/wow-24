@@ -17,17 +17,68 @@ const HOTSPOT_DETAILS = {
     headline: "Dil Kehnda",
     tickeLink: "https://konfhub.com/gdscwowpunjab2024",
     eventDate: "April 6, 2024 10:00:00",
-    speakers: [{name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        Website:"#"
-    }},
-    {name:"TBA",role:"Engineer",org:"Adobe, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"#",
-        github:"#"
-    }}],
+    speakers: [{
+      name: "Tanmay Kumar", role: "Technical Product Engineer", org: "Boeing, India", image: "/images/speakers/speaker1.jpeg", socials: {
+        // instagram: "#",
+        // facebook: "#",
+        Website: "https://www.linkedin.com/in/tanmaykumar-nie/"
+      }
+    },
+    {
+      name: "Megha Arora", role: "Staff Developer Advocate", org: "MongoDB, India", image: "/images/speakers/speaker2.jpeg", socials: {
+        // instagram: "#",
+        // facebook: "#",
+        // twitter: "#",
+        // github: "#",
+        website: "https://www.linkedin.com/in/arora-megha/"
+      }
+    },
+    {
+      name: "Palak Awasthi", role: "Software Engineer II", org: "PayPal, India", image: "/images/speakers/speaker3.jpeg", socials: {
+        // instagram: "#",
+        // facebook: "#",
+        // twitter: "#",
+        // github: "#",
+        website: "https://www.linkedin.com/in/palakawasthi/"
+      }
+    },
+    {
+      name: "Mahima Hans", role: "Member of Technical Staff II", org: "Adobe, India", image: "/images/speaker.png", socials: {
+        // instagram: "#",
+        // facebook: "#",
+        // twitter: "#",
+        // github: "#"
+      }
+    },
+    {
+      name: "Eric Bishard", role: "Developer Ecosystem Manager", org: "Metamask, United States", image: "/images/speakers/speaker5.jpeg", socials: {
+        // instagram: "#",
+        // facebook: "#",
+        twitter: "https://x.com/httpjunkie?s=21",
+        // github: "#",
+
+      }
+    },
+    {
+      name: "Supriya Purohit", role: "Head of Product and Growth", org: "Cosmocloud, India", image: "/images/speakers/speaker6.jpeg", socials: {
+        // instagram: "#",
+        // facebook: "#",
+        // twitter: "#",
+        // github: "#",
+        website: "https://www.linkedin.com/in/supriyapurohit27"
+      }
+    },
+    {
+      name: "Dhruv Patel", role: "Developer Relations Manager", org: "Aspecta.id, United States", image: "/images/speakers/speaker7.png", socials: {
+        // instagram: "#",
+        // facebook: "#",
+        // twitter: "#",
+        // github: "#"
+        
+      }
+    },
+
+    ],
     ticketBenefits: []
   },
   "PNE": {
@@ -76,48 +127,56 @@ const HOTSPOT_DETAILS = {
 
 
 const DEFAULT_SPEAKERS = [
-    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        Website:"#"
-    }},
-    {name:"TBA",role:"Engineer",org:"Adobe, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"#",
-        github:"#"
-    }},
-    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        // twitter:"#"
-    }},
-    {name:"TBA",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-        instagram:"#",
-        facebook:"#",
-        twitter:"#"
-    }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
-    // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
-    //     instagram:"#",
-    //     facebook:"#",
-    //     twitter:"#"
-    // }},
-    
+  {
+    name: "TBA", role: "Engineer", org: "Google, India", image: "/images/speaker.png", socials: {
+      instagram: "#",
+      facebook: "#",
+      Website: "#"
+    }
+  },
+  {
+    name: "TBA", role: "Engineer", org: "Adobe, India", image: "/images/speaker.png", socials: {
+      instagram: "#",
+      facebook: "#",
+      twitter: "#",
+      github: "#"
+    }
+  },
+  {
+    name: "TBA", role: "Engineer", org: "Google, India", image: "/images/speaker.png", socials: {
+      instagram: "#",
+      facebook: "#",
+      // twitter:"#"
+    }
+  },
+  {
+    name: "TBA", role: "Engineer", org: "Google, India", image: "/images/speaker.png", socials: {
+      instagram: "#",
+      facebook: "#",
+      twitter: "#"
+    }
+  },
+  // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+  //     instagram:"#",
+  //     facebook:"#",
+  //     twitter:"#"
+  // }},
+  // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+  //     instagram:"#",
+  //     facebook:"#",
+  //     twitter:"#"
+  // }},
+  // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+  //     instagram:"#",
+  //     facebook:"#",
+  //     twitter:"#"
+  // }},
+  // {name:"John Doe",role:"Engineer",org:"Google, India",image:"/images/speaker.png",socials:{
+  //     instagram:"#",
+  //     facebook:"#",
+  //     twitter:"#"
+  // }},
+
 ]
 
 const getRegion = async () => {
@@ -130,33 +189,33 @@ const getRegion = async () => {
 
 export async function changeDetails(selectedRegion) {
 
-if(!selectedRegion){
-  selectedRegion = await getRegion()
-}
+  if (!selectedRegion) {
+    selectedRegion = await getRegion()
+  }
 
-//  console.log({ts:selectedRegion})
+  //  console.log({ts:selectedRegion})
 
   const MY_REGION = HOTSPOT_DETAILS[HOTSPOT_MAP[selectedRegion]];
 
-  console.log({MY_REGION});
-  
+  console.log({ MY_REGION });
+
 
   document.getElementById("hero_head").innerText = MY_REGION.headline;
   document.getElementById("hero_cta").href = MY_REGION.tickeLink;
   setSpeakers(MY_REGION.speakers)
-  setTimer(MY_REGION.eventDate||new Date())
+  setTimer(MY_REGION.eventDate || new Date())
 
 
   console.log(`Setting region to ${selectedRegion}`);
 
 
-  
 
 
 
 
 
-  
+
+
 
   // Make dynamic
   // 1. Headline

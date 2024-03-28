@@ -23,10 +23,9 @@ document.querySelector('#footer').innerHTML = `
       <div class="footer-col footer-links">
         <span class="h-2"><b>Follow Us:</b></span>
         <div class="social-links">
-          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="https://twitter.com/gdsclpu/"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/gdsclpu/"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/wow.pb_/"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </footer>`
