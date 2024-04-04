@@ -10,7 +10,7 @@ const SPEAKERS = [
     {name:"Palak Awasthi",role:"Software Engineer II",org:"PayPal, India",image:"/images/speakers/speaker3.jpeg",socials:{
         website: "https://www.linkedin.com/in/palakawasthi/"
     }},
-    {name:"Mahima Hans",role:"Member of Technical Staff II",org:"Adobe, India",image:"/images/speaker.png",socials:{
+    {name:"Mahima Hans",role:"Member of Technical Staff II",org:"Adobe, India",image:"/images/speakers/speaker4.jpg",socials:{
     }},
     {name:"Eric Bishard",role:"Developer Ecosystem Manager",org:"Metamask, United States",image:"/images/speakers/speaker5.jpeg",socials:{
         // instagram:"#",
@@ -27,7 +27,14 @@ const SPEAKERS = [
         // instagram:"#",
         // facebook:"#",
         // twitter:"#"
+        webiste: "https://www.linkedin.com/in/dhruvpatel1706/?trk=opento_nprofile_details"
     }},
+    {name:"Simar Preet Singh",role:"Developer Relations Manager",org:"Aspecta.id, India",image:"/images/speakers/speaker8.jpeg",socials:{
+      // instagram:"#",
+      // facebook:"#",
+      // twitter:"#"
+      webiste: "https://www.linkedin.com/in/programmersingh/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  }},
     
 ]
 
