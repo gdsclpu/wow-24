@@ -80,7 +80,7 @@ const HOTSPOT_DETAILS = {
       }
     },
     {
-      name: "Simar Preet Singh", role: "Community Organiser", org: "Google Developer Groups Jalandhar, India", image: "/images/speakers/speaker8.jpeg", socials: {
+      name: "Simar Preet Singh", role: "Community Organiser", org: "GDG, India", image: "/images/speakers/speaker8.jpeg", socials: {
         // instagram: "#",
         // facebook: "#",
         // twitter: "#",
