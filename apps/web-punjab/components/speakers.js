@@ -10,7 +10,7 @@ const SPEAKERS = [
     {name:"Palak Awasthi",role:"Software Engineer II",org:"PayPal, India",image:"/images/speakers/speaker3.jpeg",socials:{
         website: "https://www.linkedin.com/in/palakawasthi/"
     }},
-    {name:"Mahima Hans",role:"Member of Technical Staff II",org:"Adobe, India",image:"/images/speaker.png",socials:{
+    {name:"Mahima Hans",role:"Member of Technical Staff II",org:"Adobe, India",image:"/images/speakers/speaker4.jpg",socials:{
     }},
     {name:"Eric Bishard",role:"Developer Ecosystem Manager",org:"Metamask, United States",image:"/images/speakers/speaker5.jpeg",socials:{
         // instagram:"#",

@@ -43,18 +43,19 @@ const HOTSPOT_DETAILS = {
       }
     },
     {
-      name: "Mahima Hans", role: "Member of Technical Staff II", org: "Adobe, India", image: "/images/speaker.png", socials: {
-        // instagram: "#",
+      name: "Mahima Hans", role: "Member of Technical Staff II", org: "Adobe, India", image: "/images/speakers/speaker4.jpg", socials: {
+        instagram: "https://www.instagram.com/mahimahans111/",
         // facebook: "#",
-        // twitter: "#",
+        twitter: "https://twitter.com/mahimahans111?s=21",
         // github: "#"
+        website: "https://www.linkedin.com/in/mahima-hans-3b9976155/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
       }
     },
     {
       name: "Eric Bishard", role: "Developer Ecosystem Manager", org: "Metamask, United States", image: "/images/speakers/speaker5.jpeg", socials: {
         // instagram: "#",
         // facebook: "#",
-        twitter: "https://x.com/httpjunkie?s=21",
+        twitter: "https://x.com/httpjunkie?s=21"
         // github: "#",
 
       }
@@ -74,6 +75,7 @@ const HOTSPOT_DETAILS = {
         // facebook: "#",
         // twitter: "#",
         // github: "#"
+        website: "https://www.linkedin.com/in/dhruvpatel1706/?trk=opento_nprofile_details"
         
       }
     },
