@@ -79,6 +79,16 @@ const HOTSPOT_DETAILS = {
         
       }
     },
+    {
+      name: "Simar Preet Singh", role: "Community Organiser", org: "Google Developer Groups Jalandhar, India", image: "/images/speakers/speaker8.jpeg", socials: {
+        // instagram: "#",
+        // facebook: "#",
+        // twitter: "#",
+        // github: "#"
+        website: "https://www.linkedin.com/in/programmersingh/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        
+      }
+    },
 
     ],
     ticketBenefits: []

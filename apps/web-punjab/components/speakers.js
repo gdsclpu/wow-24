@@ -27,7 +27,14 @@ const SPEAKERS = [
         // instagram:"#",
         // facebook:"#",
         // twitter:"#"
+        webiste: "https://www.linkedin.com/in/dhruvpatel1706/?trk=opento_nprofile_details"
     }},
+    {name:"Simar Preet Singh",role:"Developer Relations Manager",org:"Aspecta.id, India",image:"/images/speakers/speaker8.jpeg",socials:{
+      // instagram:"#",
+      // facebook:"#",
+      // twitter:"#"
+      webiste: "https://www.linkedin.com/in/programmersingh/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+  }},
     
 ]
 
